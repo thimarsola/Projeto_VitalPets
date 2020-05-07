@@ -1,0 +1,79 @@
+.main_home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: {
+        image: url("/_cdn/img/bg-home.jpg");
+        size: cover;
+        position: center;
+    }
+    .main_home_content{
+        margin: 0;
+        padding: 0;
+        max-width: 37em;
+        height: 100%;
+        .main_home_content_header{
+            h1{
+                margin: 0;
+                padding: 0;
+                @include font(2.625em, $font-light);
+                color: $color3;
+            }
+            hr{
+                width: 5em;
+                border: 1.5px solid $color3;
+            }
+        }
+        .main_home_content_content{
+            p{
+                margin: 0;
+                padding: 0;
+                @include font(1.25em, $font-light);
+                color: $color3;
+                @include textAlign(justify);
+            }
+        }
+        .main_home_content_scroll {
+            position: absolute;
+            bottom: 2.5em;
+            left: 50%;
+            transform: translateX(-50%);
+            a {
+                display: block;
+                width: 2.5em;
+                height: 5em;
+                border-radius: 50rem;
+                border: 1.5px solid #D3B98E;
+                &::after {
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    top: 16%;
+                    left: 50%;
+                    display: block;
+                    width: .625em;
+                    height: .625em;
+                    background-color: #D3BE9A;
+                    border-radius: 50em;
+                    transform: translatex(-50%);
+                    content: "";
+                    animation: scroll 2s infinite;
+                }
+            }
+        }
+        @keyframes scroll {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 100%;
+            }
+            100% {
+                opacity: 0%;
+                top: 70%;
+            }
+        }
+    }
+}

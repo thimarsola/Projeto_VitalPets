@@ -15,6 +15,19 @@
             margin: 1.5em 0;
         }
     }
+
+    #quem-somos{
+        .row{
+            & > div:nth-child(2){
+                display: none;
+            }
+        }
+        .main_about_video{
+            iframe{
+                min-height: 20em;
+            }
+        }
+    }
 }
 
 //MOBILE

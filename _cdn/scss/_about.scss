@@ -1,0 +1,36 @@
+#quem-somos{
+    margin: 0;
+    padding: 5em 0;
+    .row{
+        .main_about_header{
+            margin-bottom: 3em;
+            padding: 0;
+            @extend %header;
+        }
+        .main_about_content{
+            margin: 0;
+            padding: 0;
+            p{
+                margin: 0;
+                padding: 0;
+                @include font(1em, $font-light);
+                @include textAlign(justify);
+                line-height: 1.25em;
+            }
+        }
+        & > div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .main_about_video{
+        margin-top: 5em;
+        padding: 0;
+        iframe{
+            width: 100%;
+            min-height: 25em;
+            border: none;
+        }
+    }
+}
