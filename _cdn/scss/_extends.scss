@@ -16,6 +16,9 @@
 
 %list{
     li{
+        margin-bottom: 1.25em;
+        @include font(1em, $font-light);
+        @include textAlign(justify);
         list:{
             style:{
                 image: url("/_cdn/img/vt-paw-li.svg");

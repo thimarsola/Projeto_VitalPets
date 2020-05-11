@@ -1,0 +1,102 @@
+.main_shower {
+    margin: 0;
+    padding: 5em 0;
+
+    background: {
+        color: $bg-color2;
+    }
+
+    .main_shower_content_header {
+        margin-bottom: 3em;
+        @extend %header;
+    }
+
+    .main_shower_content_content {
+        margin: 0;
+        padding: 0;
+
+        p {
+            @include font(1em, $font-light);
+            @include textAlign(justify);
+        }
+
+        ul {
+            @extend %list;
+        }
+    }
+
+    .main_shower_information {
+        margin-top: 3.5em;
+        padding: 0;
+        .main_shower_information_content {
+            .main_shower_information_content_header {
+                p {
+                    margin: 0;
+                    padding: 0;
+                    strong {
+                        @include font(1.375em, $font-bold);
+                    }
+                }
+
+                hr {
+                    margin: 1.25em 0 1em 0;
+                    width: 3em;
+                    border: 1.5px solid $color1;
+                }
+            }
+
+            .main_shower_information_content_content {
+                margin: 0;
+                padding: 0;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    @include font(1em, $font-light);
+                    @include textAlign(justify);
+                }
+
+                .main_shower_information_content_content_hours {
+                    margin-top: 1em;
+
+                    .main_shower_information_content_content_hours_header {
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            @include font(1.125em, $font-bold);
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+            .main_shower_image{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .main_shower_information_content_content_service{
+                margin-top: 3em;
+                .main_shower_information_content_content_service_header{
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        @include font(1.125em, $font-bold);
+                        color: $color1;
+                    }
+                }
+                p {
+                    @include font(1em, $font-light);
+                    @include textAlign(justify);
+                }
+                .main_shower_information_content_content_service_buttons{
+                    margin-top: 2.375em;
+                    a{
+                        color: $color3;
+                    }
+                }
+            }
+        }
+    }
+}

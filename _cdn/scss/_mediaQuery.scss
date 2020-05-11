@@ -34,3 +34,32 @@
 @media screen and (max-width: 576px) {
 
 }
+
+@media screen and (max-width: 425px) {
+    .main_shower{
+        .main_shower_information {
+            .main_shower_information_content{
+                .main_shower_image{
+                    margin-top: 2em;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main_shower{
+        .main_shower_information {
+            .main_shower_information_content{
+                .main_shower_information_content_content_service{
+                    .main_shower_information_content_content_service_buttons{
+                        a{
+                            font-size: .875em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

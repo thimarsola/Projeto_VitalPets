@@ -1,0 +1,44 @@
+#galeria{
+    margin: 0;
+    padding-bottom: 5em;
+    .main_gallery_header{
+        margin: 0;
+        padding: 5em 0;
+        background:{
+            color: $color1;
+        }
+        @extend %header;
+        h1{
+            color: $color3;
+        }
+    }
+    .main_gallery_content{
+        .main_gallery_content_image{
+            margin: 0;
+            padding: 0;
+            border-radius: 5px !important;
+            overflow: hidden;
+            &:hover{
+                transform: scale(.95);
+                @include transition;
+            }
+            a{
+                margin: 0;
+                padding: 0;
+                img{
+                    object:{
+                        fit: cover;
+                        position: center;
+                    }
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    &:hover{
+                        -webkit-filter: none;
+                        filter: none;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}
