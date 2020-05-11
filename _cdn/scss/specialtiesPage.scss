@@ -1,0 +1,35 @@
+.main_specialties{
+    margin: 0;
+    padding: 5em 0;
+    .main_specialties_header{
+        margin: 0;
+        padding: 0;
+        @extend %header;
+    }
+    .main_specialties_content{
+        margin-top: 3em;
+        padding: 0;
+        p{
+            margin: 0;
+            padding: 0;
+            @include font(1em, $font-light);
+            @include textAlign(justify);
+        }
+        ul{
+            margin: 3em 0;
+            padding: 0;
+            @extend %list;
+        }
+        hr{
+            margin: 2em 0 3em 0;
+        }
+        .main_specialties_content_contact{
+            .main_specialties_content_contact_buttons{
+                margin-top: 2.375em;
+                a{
+                    color: $color3;
+                }
+            }
+        }
+    }
+}
