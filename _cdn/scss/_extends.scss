@@ -14,6 +14,22 @@
     }
 }
 
+%footer{
+    margin: 0;
+    padding: 0;
+    p{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include font(1.125em, $font-light);
+        img{
+            margin-right: .5em;
+        }
+    }
+}
+
 %list{
     li{
         margin-bottom: 1.25em;

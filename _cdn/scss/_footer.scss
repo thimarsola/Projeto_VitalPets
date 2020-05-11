@@ -1,0 +1,185 @@
+.footer{
+    .form_informations{
+        margin: 0;
+        padding: 3em 0;
+        background:{
+            color: $bg-color3;
+        }
+        .form_informations_grid{
+            margin-top: 5em;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            .form_informations_card_about{
+                .form_informations_card_about_header{
+                    margin-bottom: 2em;
+                }
+                .form_informations_card_about_content{
+                    p{
+                        @include font(.875em, $font-light);
+                        @include textAlign(justify);
+                    }
+                    a{
+                        img{
+                            &:hover{
+                                transform: scale(1.1);
+                                @include transition;
+                            }
+                        }
+                    }
+                }
+            }
+            .form_informations_card_contact{
+                margin: 0;
+                padding: 0;
+                .form_informations_card_contact_header{
+                    @extend %footer;
+                }
+                .form_informations_card_contact_content{
+                    margin-top: 1.125em;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            margin: 0.375em 0;
+                            a{
+                                color: $color2;
+                                @include font(.875em, $font-light);
+                                &:hover{
+                                    color: $color1;
+                                    @include transition;
+                                }
+                            }
+                        }
+                    }
+                    .form_informations_card_contact_content_payment{
+                        margin-top: 0.625em;
+                        p{
+                            margin: 0;
+                            padding: 0;
+                            @include font(.875em, $font-light);
+                            span{
+                                color: $color1;
+                                @include font(inherit, $font-bold);
+                            }
+                        }
+                    }
+                }
+            }
+            .form_informations_card_hours{
+                margin: 0;
+                padding: 0;
+                .form_informations_card_hours_header{
+                    @extend %footer;
+                }
+                .form_informations_card_hours_content{
+                    margin-top: 1.125em;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        @include font(.875em, $font-light);
+                        @include textAlign(justify);
+                    }
+                }
+            }
+            .form_informations_card_localization{
+                margin: 0;
+                padding: 0;
+                .form_informations_card_localization_header{
+                    @extend %footer;
+                }
+                .form_informations_card_localization_content{
+                    margin-top: 1.125em;
+                    iframe{
+                        width: 100%;
+                        height: 11.25em;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright{
+        margin: 0;
+        padding: 0.625em 0;
+        background:{
+            color: $bg-color4;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            @include font(.875em, $font-light);
+            @include textAlign(center);
+            color: darken($color1, 15%);
+        }
+    }
+    .footer_developer{
+        margin: 0;
+        padding: 0.625em 0;
+        background-color: $color1;
+        .footer_developer_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .footer_developer_goognet{
+                margin: 0;
+                padding: 0;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    @include font(.875em, $font-light);
+                    color: $color3;
+                    strong{
+                        margin: 0;
+                        padding: 0;
+                        @include font(inherit, $font-light);
+                        color: inherit;
+                        a{
+                            margin: 0;
+                            padding: 0;
+                            @include font(inherit, $font-bold);
+                            color: inherit;
+                            &:hover{
+                                color: darken($color1, 20%);
+                                @include transition;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer_developer_validator{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .footer_developer_header{
+                    margin-right: 0.5em;
+                    img{
+                        height: 1.5em;
+                    }
+                }
+                .footer_developer_content{
+                    margin: 0;
+                    padding: 0;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        @include font(.875em, $font-light);
+                        color: $color3;
+                        a{
+                            margin: 0;
+                            padding: 0;
+                            @include font(inherit, $font-bold);
+                            color: inherit;
+                            &:hover{
+                                color: darken($color1, 20%);
+                                @include transition;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -13,29 +13,35 @@
         }
     }
     .main_gallery_content{
-        .main_gallery_content_image{
-            margin: 0;
-            padding: 0;
-            border-radius: 5px !important;
-            overflow: hidden;
-            &:hover{
-                transform: scale(.95);
-                @include transition;
-            }
-            a{
+        .main_gallery_content_grid{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            .main_gallery_content_image{
                 margin: 0;
                 padding: 0;
-                img{
-                    object:{
-                        fit: cover;
-                        position: center;
-                    }
-                    -webkit-filter: grayscale(100%);
-                    filter: grayscale(100%);
-                    &:hover{
-                        -webkit-filter: none;
-                        filter: none;
-                        @include transition;
+                border-radius: .375em !important;
+                overflow: hidden;
+                &:hover{
+                    transform: scale(.95);
+                    @include transition;
+                }
+                a{
+                    margin: 0;
+                    padding: 0;
+                    img{
+                        object:{
+                            fit: cover;
+                            position: center;
+                        }
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                        &:hover{
+                            -webkit-filter: none;
+                            filter: none;
+                            @include transition;
+                        }
                     }
                 }
             }

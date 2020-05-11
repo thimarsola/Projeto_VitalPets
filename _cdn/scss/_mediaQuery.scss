@@ -31,10 +31,6 @@
 }
 
 //MOBILE
-@media screen and (max-width: 576px) {
-
-}
-
 @media screen and (max-width: 425px) {
     .main_shower{
         .main_shower_information {
@@ -42,6 +38,27 @@
                 .main_shower_image{
                     margin-top: 2em;
                     justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #especialidades{
+        .main_specialties_header{
+            h1{
+                font-size: 2em;
+            }
+        }
+    }
+    .footer{
+        .footer_developer{
+            .footer_developer_container{
+                display: block;
+                .footer_developer_goognet{
+                    margin-bottom: .5em;
+                    @include textAlign(center);
                 }
             }
         }
