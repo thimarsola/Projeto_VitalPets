@@ -1,0 +1,71 @@
+.main_information{
+    margin: 0;
+    padding: 4em 0;
+    background:{
+        color: $color2;
+    }
+    .main_information_header{
+        margin-bottom: 2em;
+        h1{
+            margin: 0;
+            padding: 0;
+            @include font(1.5em, $font-bold);
+            color: $color3;
+        }
+        hr{
+            width: 4em;
+            border: 1.5px solid $color1;
+        }
+    }
+    .main_information_content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        .main_information_content_grid{
+            margin: 0;
+            padding: 0;
+            .main_information_content_grid_header{
+                h2{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    @include font(1.25em, $font-bold);
+                    color: $color3;
+                    img{
+                        margin-right: .875em;
+                    }
+                }
+            }
+            .main_information_content_grid_content{
+                margin-top: 2em;
+                padding: 0;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    @include font(.875em, $font-light);
+                    @include textAlign(justify);
+                    color: $color3;
+                }
+                a{
+                    margin-top: 1em;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    @include font(1.125em, $font-bold);
+                    color: $color1;
+                    &:hover{
+                        img{
+                            transform: scale(1.05);
+                            @include transition;
+                        }
+                        transform: scale(1.05);
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}

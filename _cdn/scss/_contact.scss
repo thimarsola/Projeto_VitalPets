@@ -1,0 +1,56 @@
+.main_contact{
+    margin: 0;
+    padding: 5em 0;
+    .main_contact_header{
+        @extend %header;
+    }
+    .main_contact_content{
+        margin-top: 3em;
+        p{
+            margin: 0;
+            padding: 0;
+            @include font(1em, $font-light);
+            @include textAlign(justify);
+        }
+        .main_contact_content_form{
+            margin-top: 3em;
+            padding: 2em;
+            background:{
+                color: $color3;
+            }
+            box-shadow: 0 0 10px rgba(#333, .3);
+            .main_contact_content_form_header{
+                margin-bottom: 1em;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    @include font(1.25em, $font-bold);
+                    img{
+                        margin-right: 1em;
+                    }
+                }
+            }
+            form{
+                input, textarea{
+                    @include font(.875em, $font-light);
+                }
+                .button_form{
+                    margin-top: 1em;
+                    display: flex;
+                    justify-content: flex-end;
+                    button{
+                        color: $color3;
+                    }
+                }
+            }
+        }
+        .row > div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

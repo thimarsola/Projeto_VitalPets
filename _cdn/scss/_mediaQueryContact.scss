@@ -1,0 +1,18 @@
+//TABLET
+@media screen and (max-width: 768px) {
+
+    //BODY
+    * {
+        font-size: 14px;
+    }
+
+    //NAVBAR
+    .navbar{
+        img{
+            height: 5.5em;
+        }
+        .collapse{
+            margin: 1.5em 0;
+        }
+    }
+}
